@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,141 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchTheKenny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4x-xw-aQG">
+                                <rect key="frame" x="108" y="69" width="191" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="qJU-8F-LRM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-M3-XT5">
+                                <rect key="frame" x="108" y="142" width="191" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="hY2-Y2-uol"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="sMS-GU-RdN">
+                                <rect key="frame" x="20" y="206" width="107" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="8gN-Tc-3wa"/>
+                                    <constraint firstAttribute="height" constant="128" id="NG4-4R-HYt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="aW1-4g-DdJ">
+                                <rect key="frame" x="154" y="206" width="107" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-U8-lLv">
+                                <rect key="frame" x="287" y="206" width="107" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="oay-51-8v0">
+                                <rect key="frame" x="20" y="342" width="107" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0zo-UX-Nec"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-Qo-g1C">
+                                <rect key="frame" x="20" y="478" width="107" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-Ea-5yb">
+                                <rect key="frame" x="154" y="478" width="107" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="JCN-M3-GTN">
+                                <rect key="frame" x="287" y="478" width="107" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="yWr-0h-wzt">
+                                <rect key="frame" x="154" y="342" width="107" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ekran Resmi 2020-04-29 02.04.04" translatesAutoresizingMaskIntoConstraints="NO" id="TxU-vz-0Ke">
+                                <rect key="frame" x="287" y="342" width="107" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highcore: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOh-a6-mBm">
+                                <rect key="frame" x="108" y="655" width="191" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="enm-ya-Sf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9016237855" green="0.86790782209999995" blue="0.83807116749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aW1-4g-DdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="51f-IQ-2VS"/>
+                            <constraint firstItem="tl3-M3-XT5" firstAttribute="top" secondItem="z4x-xw-aQG" secondAttribute="bottom" constant="8" id="6bz-BG-rPe"/>
+                            <constraint firstItem="aW1-4g-DdJ" firstAttribute="bottom" secondItem="NYO-U8-lLv" secondAttribute="bottom" id="8Ka-Hj-OSC"/>
+                            <constraint firstItem="sMS-GU-RdN" firstAttribute="bottom" secondItem="aW1-4g-DdJ" secondAttribute="bottom" id="8qJ-9V-PEj"/>
+                            <constraint firstItem="PrD-Qo-g1C" firstAttribute="bottom" secondItem="rPK-Ea-5yb" secondAttribute="bottom" id="9p2-Yd-2GK"/>
+                            <constraint firstItem="z4x-xw-aQG" firstAttribute="leading" secondItem="tl3-M3-XT5" secondAttribute="leading" id="Bf4-dT-2Ve"/>
+                            <constraint firstItem="NYO-U8-lLv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CBY-k3-y5q"/>
+                            <constraint firstItem="yWr-0h-wzt" firstAttribute="trailing" secondItem="rPK-Ea-5yb" secondAttribute="trailing" id="Hif-eM-Jv4"/>
+                            <constraint firstItem="tl3-M3-XT5" firstAttribute="leading" secondItem="lOh-a6-mBm" secondAttribute="leading" id="Irg-Fm-TkS"/>
+                            <constraint firstItem="TxU-vz-0Ke" firstAttribute="leading" secondItem="JCN-M3-GTN" secondAttribute="leading" id="JZe-8L-W5R"/>
+                            <constraint firstItem="yWr-0h-wzt" firstAttribute="bottom" secondItem="TxU-vz-0Ke" secondAttribute="bottom" id="KBA-yY-06Q"/>
+                            <constraint firstItem="z4x-xw-aQG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="LkD-9E-gNN"/>
+                            <constraint firstItem="TxU-vz-0Ke" firstAttribute="trailing" secondItem="JCN-M3-GTN" secondAttribute="trailing" id="O8w-r2-XIm"/>
+                            <constraint firstItem="sMS-GU-RdN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SuG-H4-9w2"/>
+                            <constraint firstItem="rPK-Ea-5yb" firstAttribute="bottom" secondItem="JCN-M3-GTN" secondAttribute="bottom" id="UiN-Oo-kPf"/>
+                            <constraint firstItem="oay-51-8v0" firstAttribute="top" secondItem="yWr-0h-wzt" secondAttribute="top" id="W1t-uV-uuC"/>
+                            <constraint firstItem="yWr-0h-wzt" firstAttribute="leading" secondItem="rPK-Ea-5yb" secondAttribute="leading" id="XLd-Gg-o1h"/>
+                            <constraint firstItem="sMS-GU-RdN" firstAttribute="trailing" secondItem="oay-51-8v0" secondAttribute="trailing" id="Xkr-VY-Ma4"/>
+                            <constraint firstItem="aW1-4g-DdJ" firstAttribute="top" secondItem="NYO-U8-lLv" secondAttribute="top" id="YCY-XN-gHq"/>
+                            <constraint firstItem="aW1-4g-DdJ" firstAttribute="trailing" secondItem="yWr-0h-wzt" secondAttribute="trailing" id="YSL-ww-8io"/>
+                            <constraint firstItem="aW1-4g-DdJ" firstAttribute="leading" secondItem="sMS-GU-RdN" secondAttribute="trailing" constant="27" id="bcC-50-1o7"/>
+                            <constraint firstItem="z4x-xw-aQG" firstAttribute="trailing" secondItem="tl3-M3-XT5" secondAttribute="trailing" id="dQ6-yQ-WHz"/>
+                            <constraint firstItem="z4x-xw-aQG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="fJC-Us-n6A"/>
+                            <constraint firstItem="oay-51-8v0" firstAttribute="trailing" secondItem="PrD-Qo-g1C" secondAttribute="trailing" id="fnU-hr-Y2p"/>
+                            <constraint firstItem="NYO-U8-lLv" firstAttribute="leading" secondItem="aW1-4g-DdJ" secondAttribute="trailing" constant="26" id="hlB-i2-wTx"/>
+                            <constraint firstItem="aW1-4g-DdJ" firstAttribute="leading" secondItem="yWr-0h-wzt" secondAttribute="leading" id="j8f-8H-2Qd"/>
+                            <constraint firstItem="rPK-Ea-5yb" firstAttribute="top" secondItem="JCN-M3-GTN" secondAttribute="top" id="jDr-5a-NI8"/>
+                            <constraint firstItem="sMS-GU-RdN" firstAttribute="top" secondItem="aW1-4g-DdJ" secondAttribute="top" id="jjZ-C1-1b1"/>
+                            <constraint firstItem="PrD-Qo-g1C" firstAttribute="top" secondItem="rPK-Ea-5yb" secondAttribute="top" id="k1b-DG-ulB"/>
+                            <constraint firstItem="oay-51-8v0" firstAttribute="bottom" secondItem="yWr-0h-wzt" secondAttribute="bottom" id="lJb-YR-4v4"/>
+                            <constraint firstItem="oay-51-8v0" firstAttribute="top" secondItem="sMS-GU-RdN" secondAttribute="bottom" constant="8" id="lWU-hG-dFM"/>
+                            <constraint firstItem="tl3-M3-XT5" firstAttribute="trailing" secondItem="lOh-a6-mBm" secondAttribute="trailing" id="ntR-Qh-OpJ"/>
+                            <constraint firstItem="sMS-GU-RdN" firstAttribute="leading" secondItem="oay-51-8v0" secondAttribute="leading" id="pJ8-kL-kFl"/>
+                            <constraint firstItem="sMS-GU-RdN" firstAttribute="top" secondItem="tl3-M3-XT5" secondAttribute="bottom" constant="8" id="pWu-0d-C06"/>
+                            <constraint firstItem="NYO-U8-lLv" firstAttribute="leading" secondItem="TxU-vz-0Ke" secondAttribute="leading" id="qra-Wx-weB"/>
+                            <constraint firstItem="oay-51-8v0" firstAttribute="leading" secondItem="PrD-Qo-g1C" secondAttribute="leading" id="r4s-PO-gi3"/>
+                            <constraint firstItem="lOh-a6-mBm" firstAttribute="top" secondItem="PrD-Qo-g1C" secondAttribute="bottom" constant="49" id="sfy-Cp-dMS"/>
+                            <constraint firstItem="NYO-U8-lLv" firstAttribute="trailing" secondItem="TxU-vz-0Ke" secondAttribute="trailing" id="sh0-Y2-nut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z4x-xw-aQG" secondAttribute="trailing" constant="115" id="uGQ-Lc-gUi"/>
+                            <constraint firstItem="yWr-0h-wzt" firstAttribute="top" secondItem="TxU-vz-0Ke" secondAttribute="top" id="wVs-vt-EUE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lOh-a6-mBm" secondAttribute="bottom" constant="151" id="xbi-iB-1bu"/>
+                            <constraint firstItem="PrD-Qo-g1C" firstAttribute="top" secondItem="oay-51-8v0" secondAttribute="bottom" constant="8" id="y7a-NF-KbS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="lOh-a6-mBm" id="WP0-RO-q3b"/>
+                        <outlet property="image1" destination="sMS-GU-RdN" id="Pep-PX-bMZ"/>
+                        <outlet property="image2" destination="aW1-4g-DdJ" id="DYZ-Dc-UEH"/>
+                        <outlet property="image3" destination="NYO-U8-lLv" id="TKQ-gL-FSG"/>
+                        <outlet property="image4" destination="oay-51-8v0" id="B98-xD-kJj"/>
+                        <outlet property="image5" destination="yWr-0h-wzt" id="Ldt-pP-4PL"/>
+                        <outlet property="image6" destination="TxU-vz-0Ke" id="wsN-hS-ll1"/>
+                        <outlet property="image7" destination="PrD-Qo-g1C" id="04m-ek-Qrg"/>
+                        <outlet property="image8" destination="rPK-Ea-5yb" id="qxW-0k-4ID"/>
+                        <outlet property="image9" destination="JCN-M3-GTN" id="EcV-1K-NVh"/>
+                        <outlet property="scoreLabel" destination="tl3-M3-XT5" id="Bdu-5T-VvD"/>
+                        <outlet property="timerLabel" destination="z4x-xw-aQG" id="DCV-H0-fuU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ekran Resmi 2020-04-29 02.04.04" width="200" height="262"/>
+    </resources>
 </document>
